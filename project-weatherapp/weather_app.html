@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="run()">
+    <div class="container">
+        <div class="box">
+            <div class="leftpart">
+                <div class="lefttop">
+                    <input type="text" placeholder="Search for weather" id="input">
+                    <button id="btn" onclick="checkweather()">Search</button>
+                </div>
+                <img src="weather.png" alt="">
+                <h1 id="temp">20 °C</h1>
+                <h3 id="weatherdesc">clear sky</h3>
+                <p id="date">5 feb</p>
+                <div class="line"><hr></div>
+                <span class="leftbottom"> <i class="fa-solid fa-location-dot"></i><p id="place"> pune</p></span>
+            </div>
+            <div class="rightpart">
+                <br>
+                <h1>Today' s Highlights</h1>
+                <div class="smallboxes">
+                    <div class="minibox"><p>Feels Like:</p><p id="feelslike"></p></div>
+                    <div class="minibox"><p>Humidity:</p><p id="humidity"></p></div>
+                    <div class="minibox"><p>Pressure:</p><p id="pressure"></p></div>
+                    <div class="minibox"><p>Visibility:</p><p id="visibility"></p></div>
+                    <div class="minibox"><p>Wind Speed:</p><p id="windspeed"></p></div>
+                    <div class="minibox"><p>Coordinates:</p><p id="latitude"></p></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="js.js"></script>
+</html>
